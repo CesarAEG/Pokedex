@@ -4,8 +4,8 @@ const fetchPokemon = () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeInput}`;
     fetch(url).then((res) => {
         if (res.status != "200") {
-            console.log(res);
             pokeImage("../images/error.png");
+            console.log(res);
             pokePs.innerHTML = "";
             pokeAtk.innerHTML = "";
             pokeDef.innerHTML = "";
